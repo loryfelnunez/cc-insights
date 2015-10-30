@@ -13,7 +13,7 @@ This challenge is to implement two features:
 Here, we have to define a few concepts (though there will be examples below to clarify):
 
 - A tweet's text is considered "clean" once all of the escape characters (e.g. \n, \", \/ ) and unicode have been removed.
-- A Twitter hashtag graph is a graph connecting all the hashtags that have mentioned together in a single tweet.
+- A Twitter hashtag graph is a graph connecting all the hashtags that have been mentioned together in a single tweet.
 
 ## Details of Implementation
 
@@ -342,6 +342,9 @@ You may write your solution on any system, but your code should be portable and 
 
 * *When are two hashtags considered the same?*  
 Hashtags must be the same, but are NOT case-sensitive.  So `#Spark`, `#spark`, and `#SPARK` should all be counted as the same hashtag.  
+
+* *What should I do with tweets that don't have at least two hashtags?*  
+These tweets still need to be processed, which may evict older tweets from the 60-second window that affects the graph, but they will not lead to new nodes or edges in the graph.  Tweets with only one hashtag should NOT create nodes.  
 
 * *Can I use pre-built packages, modules, or libraries?*   
 Yes, you may use any publicly available package, module, or library as long as you document any dependencies in your accompanying `README` file.  When we review your submission, we will download these libraries and attempt to run your program.   This is why it's very important that you document any dependencies or system specific details in your accompanying README file.  However, you should always ensure that the module you're using works efficiently for the specific use-case in the challenge, many libraries are not designed for large amounts of data.
