@@ -80,7 +80,7 @@ In this case, the tweet's text was already clean, but another example tweet migh
  "in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":60196177,"id_str":"60196177","name":"Jo\u00e3o Cassimiro","screen_name":"Jcassimironeto","location":"Paraiba","url":"http:\/\/www.facebook.com\/profile.php?id=1818814650",
  "description":"jcassimironeto","protected":false,"verified":false,"followers_count":240,"friends_count":654,
  "listed_count":0,"favourites_count":26,"statuses_count":2065,"created_at":"Sun Jul 26 01:15:03 +0000 2009",
- utc_offset":-7200,"time_zone":"Brasilia","geo_enabled":true,"lang":"pt","contributors_enabled":false,
+ "utc_offset":-7200,"time_zone":"Brasilia","geo_enabled":true,"lang":"pt","contributors_enabled":false,
  "is_translator":false,"profile_background_color":"022330","profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/671814600\/1028c894ede2eb444ebfd12f94f6cb93.jpeg",
  "profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/671814600\/1028c894ede2eb444ebfd12f94f6cb93.jpeg",
  "profile_background_tile":true,"profile_link_color":"0084B4","profile_sidebar_border_color":"FFFFFF",
