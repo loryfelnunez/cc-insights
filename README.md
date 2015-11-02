@@ -116,7 +116,7 @@ Your program should output the results of this first feature to a text file name
 then the output in `ft1.txt` should contain:
 ```
 Spark Summit East this week! #Spark #Apache (timestamp: Thu Oct 29 17:51:01 +0000 2015)
-I'm at Terminal de Integrao do Varadouro in Joo Pessoa, PB https://t.co/HOl34REL1a (timestamp: Thu Oct 29 18:10:49 +0000 2015)
+I'm at Terminal de Integrao do Varadouro in Joo Pessoa, PB https:t.co/HOl34REL1a (timestamp: Thu Oct 29 18:10:49 +0000 2015)
 
 1 tweets contained unicode.
 ```
