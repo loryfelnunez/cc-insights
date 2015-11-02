@@ -123,7 +123,7 @@ I'm at Terminal de Integrao do Varadouro in Joo Pessoa, PB https://t.co/HOl34REL
 
 ## Second Feature
 The second feature will continually update the Twitter hashtag graph and hence, the average degree of the graph. The graph should just be built using tweets that arrived in the last 60 seconds as compared to the timestamp of the latest tweet. As new tweets come in, edges formed with tweets older than 60 seconds from the timstamp of the latest tweet should be evicted. For each incoming tweet, only extract the following fields in the JSON response
-* "hastags" - hashtags found in the tweet
+* "hashtags" - hashtags found in the tweet
 * "created_at" - timestamp of the tweet
 
 ### Building the Twitter Hashtag Graph
