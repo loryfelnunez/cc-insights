@@ -398,7 +398,7 @@ You should replace the escape characters as follows:
 \n -> space
 \t -> space
 ```                                                                                                            
-&nbsp;&nbsp;Also, all whitespace escape characters should be replaced with a single space. 
+&nbsp;&nbsp;&nbsp;&nbsp;Also, all whitespace escape characters should be replaced with a single space. 
 
 * *Can tweets in the tweets.txt file be out of order?*
 No, for simplicity you can assume that the incoming tweets are in order. Although, tweets from Twiitter API may be out of order sometimes but the testing suite to test your code will have tweets in order.
