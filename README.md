@@ -182,7 +182,7 @@ The average degree for simplicity will be calculated by summing the degrees of a
 
 Average Degree = (1+2+3+2+2)/5 = 2.00
 
-The rolling average degree is now 
+The rolling average degree since the 4th tweet is now 
 ```
 2.00
 ```
@@ -223,7 +223,7 @@ The average degree will be recalculated using the same formula as before.
 
 Average Degree = (1+3+1+3+2+2)/6 = 2.00
 
-The rolling average degree is now 
+The rolling average degree since the 4th tweet is now 
 ```
 2.00
 2.00
@@ -283,7 +283,7 @@ Average Degree = (1+2+1+2+2+2)/6 = 1.67
 
 Normally the average degree is calculated for a single graph, but maintaining multiple graphs for this problem can be quite difficult. For simplicity we are only interested in calculating the average degree of of all the nodes in all graphs despite them being disconnected.
 
-The rolling average degree is now 
+The rolling average degree since the 4th tweet is now 
 ```
 2.00
 2.00
