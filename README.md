@@ -12,7 +12,7 @@ This challenge is to implement two features:
 
 Here, we have to define a few concepts (though there will be examples below to clarify):
 
-- A tweet's text is considered "clean" once all of the escape characters (e.g. \n, \", \/ ) and unicode have been removed.
+- A tweet's text is considered "clean" once all of the escape characters (e.g. \n, \", \/ ) are replaced and unicode have been removed.
 - A Twitter hashtag graph is a graph connecting all the hashtags that have been mentioned together in a single tweet.
 
 ## Details of Implementation
@@ -116,7 +116,7 @@ Your program should output the results of this first feature to a text file name
 then the output in `ft1.txt` should contain:
 ```
 Spark Summit East this week! #Spark #Apache (timestamp: Thu Oct 29 17:51:01 +0000 2015)
-I'm at Terminal de Integrao do Varadouro in Joo Pessoa, PB https:t.co/HOl34REL1a (timestamp: Thu Oct 29 18:10:49 +0000 2015)
+I'm at Terminal de Integrao do Varadouro in Joo Pessoa, PB https://t.co/HOl34REL1a (timestamp: Thu Oct 29 18:10:49 +0000 2015)
 
 1 tweets contained unicode.
 ```
@@ -367,6 +367,19 @@ The precision of the average should be two digits after the decimal place (i.e. 
 * *Do I need to account for complicated Unicode characters by replacing them?*  
 No, you simply need to remove them and track how many tweets require this removal.  
 
+* *Should I remove the escape characters or replace them with relevant characters?*
+You should replace the escape characters as follows:
+```  
+\/ -> /
+\\ -> \
+\' -> '
+\” -> “
+\n -> space
+\t -> space
+
+```
+Also, all whitespace escape characters should be replaced with a single space. 
+
 * *Should I check if the files in the input directory are text files or non-text files(binary)?*  
 No, for simplicity you may assume that all of the files in the input directory are standard text files.  
 
@@ -387,4 +400,3 @@ Generally, we will evaluate your coding challenge with a testing suite that prov
 
 * *How long will it take for me to hear back from you about my submission?*  
 We receive hundreds of submissions and try to evaluate them all in a timely manner.  We try to get back to all applicants within two or three weeks of submission, but if you have a specific deadline that requires expedited review, you may email us at cc@insightdataengineering.com.  
-
