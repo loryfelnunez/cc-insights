@@ -367,6 +367,21 @@ The precision of the average should be two digits after the decimal place (i.e. 
 * *Do I need to account for complicated Unicode characters by replacing them?*  
 No, you simply need to remove them and track how many tweets require this removal.  
 
+* *What specific class of Unicode should we remove?*  
+You should leave all ASCII Unicode characters in the "Basic Latin" category (ranging from 0x0000-0x007F) and remove all other Unicode.  
+
+* *Should I remove the escape characters or replace them with relevant characters?*  
+You should replace the escape characters as follows:  
+```  
+\/ -> /
+\\ -> \
+\' -> '
+\” -> “
+\n -> space
+\t -> space
+```                                                                                                            
+&nbsp;&nbsp;&nbsp;&nbsp;Also, all whitespace escape characters should be replaced with a single space. 
+
 * *Should I check if the files in the input directory are text files or non-text files(binary)?*  
 No, for simplicity you may assume that all of the files in the input directory are standard text files.  
 
@@ -387,18 +402,6 @@ Generally, we will evaluate your coding challenge with a testing suite that prov
 
 * *How long will it take for me to hear back from you about my submission?*  
 We receive hundreds of submissions and try to evaluate them all in a timely manner.  We try to get back to all applicants within two or three weeks of submission, but if you have a specific deadline that requires expedited review, you may email us at cc@insightdataengineering.com.  
-
-* *Should I remove the escape characters or replace them with relevant characters?*  
-You should replace the escape characters as follows:  
-```  
-\/ -> /
-\\ -> \
-\' -> '
-\” -> “
-\n -> space
-\t -> space
-```                                                                                                            
-&nbsp;&nbsp;&nbsp;&nbsp;Also, all whitespace escape characters should be replaced with a single space. 
 
 * *Can tweets in the tweets.txt file be out of order?*           						    
 No, for simplicity you can assume that the incoming tweets are in order. Although, tweets from Twiitter API may be out of order sometimes but the testing suite to test your code will have tweets in order.
