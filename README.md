@@ -404,7 +404,7 @@ Generally, we will evaluate your coding challenge with a testing suite that prov
 We receive hundreds of submissions and try to evaluate them all in a timely manner.  We try to get back to all applicants within two or three weeks of submission, but if you have a specific deadline that requires expedited review, you may email us at cc@insightdataengineering.com.  
 
 * *Can tweets in the tweets.txt file be out of order?*           						    
-No, for simplicity you can assume that the incoming tweets are in order. Although, tweets from Twiitter API may be out of order sometimes but the testing suite to test your code will have tweets in order.
+No, for simplicity you can assume that the incoming tweets are in order. Although tweets from Twitter API may be out of order sometimes, the testing suite will test your code with all the tweets in order.
 
 * *Can hashtags contain unicode characters and how should these be handled?*                                       
 Yes, hashtags can contain unicode characters. You should clean hashtags in feature 2 the same way you clean a tweet in feature 1.
