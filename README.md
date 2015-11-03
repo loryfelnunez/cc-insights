@@ -367,7 +367,7 @@ The precision of the average should be two digits after the decimal place (i.e. 
 * *Do I need to account for complicated Unicode characters by replacing them?*  
 No, you simply need to remove them and track how many tweets require this removal.  
 
-* *Should I remove the escape characters or replace them with relevant characters?*
+* *Should I remove the escape characters or replace them with relevant characters?*                                 
 You should replace the escape characters as follows:
 ```  
 \/ -> /
@@ -376,7 +376,6 @@ You should replace the escape characters as follows:
 \” -> “
 \n -> space
 \t -> space
-
 ```
 Also, all whitespace escape characters should be replaced with a single space. 
 
