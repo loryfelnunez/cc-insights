@@ -99,7 +99,7 @@ In this case, the tweet's text was already clean, but another example tweet migh
 }
 </pre>
 
-Now, the tweet's text needs to be cleaned by replacing the escape characters and removing the non-ASCII unicode characters to get the result:
+Now, the tweet's text needs to be cleaned by replacing the escape characters with their counterparts (see FAQ below for details) and removing the non-ASCII unicode characters to get the result:
 
 	I'm at Terminal de Integrao do Varadouro in Joo Pessoa, PB https://t.co/HOl34REL1a (timestamp: Thu Oct 29 18:10:49 +0000 2015)
 
@@ -388,8 +388,8 @@ Generally, we will evaluate your coding challenge with a testing suite that prov
 * *How long will it take for me to hear back from you about my submission?*  
 We receive hundreds of submissions and try to evaluate them all in a timely manner.  We try to get back to all applicants within two or three weeks of submission, but if you have a specific deadline that requires expedited review, you may email us at cc@insightdataengineering.com.  
 
-* *Should I remove the escape characters or replace them with relevant characters?*                                 
-You should replace the escape characters as follows:
+* *Should I remove the escape characters or replace them with relevant characters?*  
+You should replace the escape characters as follows:  
 ```  
 \/ -> /
 \\ -> \
