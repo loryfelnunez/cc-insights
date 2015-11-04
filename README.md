@@ -365,7 +365,7 @@ In order to be tested correctly, you must use the format described above.  We wi
 The precision of the average should be two digits after the decimal place (i.e. rounded to the nearest hundredths place).  
 
 * *Do I need to account for complicated Unicode characters by replacing them?*  
-No, you simply need to remove them and track how many tweets require this removal.  
+No, you simply need to remove them and track how many tweets require this removal.  However, you should replace the non-Unicode escape characters.  
 
 * *What specific class of Unicode should we remove?*  
 You should leave all ASCII Unicode characters in the "Basic Latin" category (ranging from 0x0000-0x007F) and remove all other Unicode.  
@@ -382,11 +382,23 @@ You should replace the escape characters as follows:
 ```                                                                                                            
 &nbsp;&nbsp;&nbsp;&nbsp;Also, all whitespace escape characters should be replaced with a single space. 
 
-* *Should I check if the files in the input directory are text files or non-text files(binary)?*  
-No, for simplicity you may assume that all of the files in the input directory are standard text files.  
+* *Can tweets in the tweets.txt file be out of order?*           						    
+No, for simplicity you can assume that the incoming tweets are in order. Although tweets from Twitter API may be out of order sometimes, the testing suite will test your code with all the tweets in order.
+
+* *Will the JSON input for the second feature contain the hashtag entity, or do I have to extract it from the text?*                                       
+You may use the hashtags directly from the entity field of the JSON, or you may extract it from the text.  In either case, you will need to make the hashtags have been "cleaned" as described in feature 1.  
+
+* *Can hashtags contain unicode characters and how should these be handled?*                                       
+Yes, hashtags can contain unicode characters. You should clean hashtags in feature 2 the same way you clean a tweet in feature 1.
 
 * *Do I need to account for empty tweets?*  
 No, for simplicity you may assume that all the tweets contain at least one word.  However, many tweets contain only unicode chracters, which will be effectively empty after you clean them.  This means you will have to test properly when implementing the second feature on real data.   
+
+* *Should my graph from feature 2 contain disconnected nodes?*                                       
+No, the graph should only contain connected nodes, and this also means that you may need to remove nodes if they are no longer connected in the last 60 seconds.  
+
+* *Should I check if the files in the input directory are text files or non-text files(binary)?*  
+No, for simplicity you may assume that all of the files in the input directory are standard text files.  
 
 * *Do I need separate programs for different features?*  
 You may use a single combined program or several programs, as long as they are all executed by the `run.sh` script.
@@ -402,12 +414,3 @@ Generally, we will evaluate your coding challenge with a testing suite that prov
 
 * *How long will it take for me to hear back from you about my submission?*  
 We receive hundreds of submissions and try to evaluate them all in a timely manner.  We try to get back to all applicants within two or three weeks of submission, but if you have a specific deadline that requires expedited review, you may email us at cc@insightdataengineering.com.  
-
-* *Can tweets in the tweets.txt file be out of order?*           						    
-No, for simplicity you can assume that the incoming tweets are in order. Although tweets from Twitter API may be out of order sometimes, the testing suite will test your code with all the tweets in order.
-
-* *Will the JSON input for the second feature contain the hashtag entity, or do I have to extract it from the text?*                                       
-You may use the hashtags directly from the entity field of the JSON, or you may extract it from the text.  In either case, you will need to make the hashtags have been "cleaned" as described in feature 1.  
-
-* *Can hashtags contain unicode characters and how should these be handled?*                                       
-Yes, hashtags can contain unicode characters. You should clean hashtags in feature 2 the same way you clean a tweet in feature 1.
