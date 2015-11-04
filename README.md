@@ -368,7 +368,7 @@ The precision of the average should be two digits after the decimal place (i.e. 
 No, you simply need to remove them and track how many tweets require this removal.  However, you should replace the non-Unicode escape characters.  
 
 * *What specific class of Unicode should we remove?*  
-You should leave all ASCII Unicode characters in the "Basic Latin" category (ranging from 0x0000-0x007F) and remove all other Unicode.  
+You should leave all ASCII Unicode characters in the "Basic Latin" category (ranging from 0x0020-0x007F or 32-127 in decimal) and remove all other Unicode.  
 
 * *Should I remove the escape characters or replace them with relevant characters?*  
 You should replace the escape characters as follows:  
