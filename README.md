@@ -406,5 +406,8 @@ We receive hundreds of submissions and try to evaluate them all in a timely mann
 * *Can tweets in the tweets.txt file be out of order?*           						    
 No, for simplicity you can assume that the incoming tweets are in order. Although tweets from Twitter API may be out of order sometimes, the testing suite will test your code with all the tweets in order.
 
+* *Will the JSON input for the second feature contain the hashtag entity, or do I have to extract it from the text?*                                       
+You may use the hashtags directly from the entity field of the JSON, or you may extract it from the text.  In either case, you will need to make the hashtags have been "cleaned" as described in feature 1.  
+
 * *Can hashtags contain unicode characters and how should these be handled?*                                       
 Yes, hashtags can contain unicode characters. You should clean hashtags in feature 2 the same way you clean a tweet in feature 1.
