@@ -245,7 +245,7 @@ New and improved #HBase connector for #Spark (timestamp: Thu Oct 29 17:51:59 +00
 New 2.7.1 version update for #Hadoop #Apache (timestamp: Thu Oct 29 17:52:05 +0000 2015)
 ```
 
-We can see that the very first tweet has a timestamp that is more than 60 seconds behind this new tweet. This means that we do not want to include this tweet in our average degree calculation.
+We can see that the very first tweet has a timestamp that is more than 60 seconds behind this new tweet. This means that we do not want to include our first tweet in our average degree calculation.
 
 The new hashtags to be used are as follows
 ```
