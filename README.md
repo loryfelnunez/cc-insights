@@ -23,10 +23,10 @@ The solution is implemented in Python 2.7
 5. For code review, comments may have some DEVLOG entries.  You can refer to devlog.md in the topmost directory to reference the DEVLOG entry number.
 
 ## Description
-
+ 
 This is an OOP approach to generate solutions for Feature 1 and Feature 2.  There is a base class called Job that instantiates  a Tweet.  We then pass it to the Manager class that puts it in a queue and make it ready for further processing.  The Job base class is enough for Feature 1.  
 
-For Feature 2, we extend the Manager and Job classes by creating ManagerGraph and JobGraph that contains the functions and classes for representing the hashtags as a graph.  Here, we have a GraphController class that serves as the main class for our STINGER inspired data structures.  See Feature 2 below.
+For Feature 2, we extend the Manager and Job classes by creating ManagerGraph and JobGraph that contains the functions and classes for representing the hashtags as a graph.  Here, there is  a GraphController class that serves as the main class for our STINGER inspired data structures.  See Feature 2 below.
  
 ### Feature 1
 
@@ -34,7 +34,7 @@ Clean and extract the text from the raw JSON tweets that come from the Twitter S
 
 ### Details
 
-We use Python's robust encoding capabilities to toggle between ASCII and UTF8 and to isolate ASCII code points. We also use datetime capabilities for date parsing and timedelta computation.
+We use Python's robust encoding capabilities to toggle between ASCII and UTF8 and to isolate ASCII code points.  We also use datetime capabilities for date parsing and timedelta computation.
 
 
 ## Feature 2
