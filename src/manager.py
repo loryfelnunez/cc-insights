@@ -32,7 +32,7 @@ class Manager:
      	return self.q.get()
 
     def unicode_output(self):
-        return ''.join([str(self.total_unicode), " has unicode\n"])
+        return ''.join([str(self.total_unicode), " tweets contained unicode.\n"])
 
  
 class ManagerGraph(Manager):
