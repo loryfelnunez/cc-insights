@@ -1,33 +1,3 @@
-Devlog
-
-1. Job Class - can convert to a Simple Factory class for each of the feature by using @classmethod to create different job type
-or since we are just extending do via inheritance
-
-2. logging - limit 
-Rotating log file
-
-
-
-3. Dictionary not as global 
-
-4. python 2.7 - new laptop clean install of anaconda python 2.7
-dateutile version
-
-5. again the module relative import brain freeze
-
-7. data -gen for testing
-
-8. modularize Manager and Job using inheritance
-
-9.  how many tweets per minute
-need to process a minute of tweets in less than a minute
-
-10. maybe use hashtags to speed up since we are parsing the json anyway
-11. hand calculate to 
-
-12.Optimization: used generators
-
-------
 
 1. Use of Python 2.7.  I was torn with using Python 3x vs 2.7 
 
