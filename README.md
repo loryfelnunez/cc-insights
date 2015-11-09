@@ -31,6 +31,8 @@ The solution is implemented in Python 2.7
 This is an OOP approach to generate solutions for Feature 1 and Feature 2.  There is a base class called Job that instantiates  a Tweet.  A Job object is passed  to the Manager class that puts it in a queue and make it ready for further processing.  The Job base class is enough for Feature 1.  
 
 For Feature 2,  the Manager and Job classes are extended by creating ManagerGraph and JobGraph that contains the functions and classes for representing the hashtags as a graph.  Here, there is  a GraphController class that serves as the main class for our STINGER inspired data structures.  See Feature 2 for STINGER details.
+
+![alt tag](https://github.com/loryn808/cc-insights/blob/master/images/filestructure.jpg?raw=true)
  
 ### Feature 1
 
