@@ -4,4 +4,4 @@ Doing great work #Apache (timestamp: Thu Oct 29 17:51:55 +0000 2015)
 Excellent post on #Flink and #Spark (timestamp: Thu Oct 29 17:51:56 +0000 2015)
 New and improved #HBase connector for #Spark (timestamp: Thu Oct 29 17:51:59 +0000 2015)
 New 2.7.1 version update for #Hadoop #Apache (timestamp: Thu Oct 29 17:52:05 +0000 2015)
-1 has unicode
+1 tweets contained unicode.

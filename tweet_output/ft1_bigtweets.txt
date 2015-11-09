@@ -8926,4 +8926,4 @@ I can't go back to sleep (timestamp: Fri Oct 30 15:32:56 +0000 2015)
 @06Goriosi (timestamp: Fri Oct 30 15:32:56 +0000 2015)
 com as notas destes testes vou trabalhar para o mcdonalds (timestamp: Fri Oct 30 15:32:56 +0000 2015)
 @esraahesham55 (timestamp: Fri Oct 30 15:32:56 +0000 2015)
-4299 has unicode
+4299 tweets contained unicode.
