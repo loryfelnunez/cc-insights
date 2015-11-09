@@ -53,8 +53,10 @@ Standard graph representation consist of Adjacency Lists or Adjacency Matrix.  S
 The data structures used are adopted from STINGER, an open source framework for temporal graph analysis
 http://cass-mt.pnnl.gov/docs/pubs/pnnlgeorgiatechsandiastinger-u.pdf
 
-We could have linked our implementation to STINGER's Python interface (albeit still experimental),
-but then decided to implement the STINGER's base data structures in Python to gain a better understanding of its implementation.
+The decision to implement STINGER-like data structures in Python instead of linking to STINGER's Python interface was made because:
+- STINGER's Python interface was still experimental
+- Explore in-depth STINGER's base implementation (for learning)
+- To customize and simplify the implementation to fit this problem set.  
 
 There are 3 main data structures:
 
