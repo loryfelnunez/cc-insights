@@ -19,7 +19,7 @@ The solution is implemented in Python 2.7
 	
 	Acceptance/Integration Test
 	
-   Test input are in tweet_input.  big_tweets.txt is the output of the data-gen module.
+   Test input are in tweet_input.  (used the data-gen module to generate test data)
    Tests output will be shown in stdout.
 
 4. tweet_output folder contains output files from the test suite and expected output files to be used in the Acceptance tests. As per the Coding challenge -- f1.txt and f2.txt are the standard output, feel free to overwrite these files.
