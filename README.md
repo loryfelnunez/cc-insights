@@ -12,9 +12,13 @@ The solution is implemented in Python 2.7
 	Feature 2 This will run average_degree.py with the output in tweet_output/ft2.txt
 	
 3. For testing, go to the tests/ folder and run run_tests.sh in that folder.  This will run the following:
+
 	Unit Test
+	
 	Scalability and Timing Tests
+	
 	Acceptance/Integration Test
+	
    Test input are in tweet_input.  big_tweets.txt is the output of the data-gen module.
    Tests output will be shown in stdout.
 
@@ -24,24 +28,27 @@ The solution is implemented in Python 2.7
 
 ## Description
  
-This is an OOP approach to generate solutions for Feature 1 and Feature 2.  There is a base class called Job that instantiates  a Tweet.  We then pass it to the Manager class that puts it in a queue and make it ready for further processing.  The Job base class is enough for Feature 1.  
+This is an OOP approach to generate solutions for Feature 1 and Feature 2.  There is a base class called Job that instantiates  a Tweet.  A Job object is passed  to the Manager class that puts it in a queue and make it ready for further processing.  The Job base class is enough for Feature 1.  
 
-For Feature 2, we extend the Manager and Job classes by creating ManagerGraph and JobGraph that contains the functions and classes for representing the hashtags as a graph.  Here, there is  a GraphController class that serves as the main class for our STINGER inspired data structures.  See Feature 2 below.
+For Feature 2,  the Manager and Job classes are extended by creating ManagerGraph and JobGraph that contains the functions and classes for representing the hashtags as a graph.  Here, there is  a GraphController class that serves as the main class for our STINGER inspired data structures.  See Feature 2 for STINGER details.
  
 ### Feature 1
 
-Clean and extract the text from the raw JSON tweets that come from the Twitter Streaming API, and track the number of tweets that contain unicode.
+TO-DO: Clean and extract the text from the raw JSON tweets that come from the Twitter Streaming API, and track the number of tweets that contain unicode.
 
 ### Details
 
-We use Python's robust encoding capabilities to toggle between ASCII and UTF8 and to isolate ASCII code points.  We also use datetime capabilities for date parsing and timedelta computation.
+Python has robust encoding capabilities to toggle between ASCII and UTF8 and to isolate ASCII code points.  It's libraries for datetime makes it convenient for date parsing and timedelta computation.
 
+Every clean-up or substitution is one pass to the text.  Since a tweet is only 140 chars it shouldn't be an issue for this challenge.  For optimization, we can minimize the number of text passes.
 
 ## Feature 2
 
-Calculate the average degree of a vertex in a Twitter hashtag graph for the last 60 seconds, and update this each time a new tweet appears.
+TO-DO: Calculate the average degree of a vertex in a Twitter hashtag graph for the last 60 seconds, and update this each time a new tweet appears.
 
 ### Details
+
+Standard graph representation consist of Adjacency Lists or Adjacency Matrix.  Since the average degree is computed for every tweet and the graph is updated on a rolling window of 60 seconds, the solution must be designed to account for an efficient graph update operation.
 
 The data structures used are adopted from STINGER, an open source framework for temporal graph analysis
 http://cass-mt.pnnl.gov/docs/pubs/pnnlgeorgiatechsandiastinger-u.pdf
